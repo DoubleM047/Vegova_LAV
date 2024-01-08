@@ -6,81 +6,47 @@ setup:
     cbi DDRD, 4
     sbi PORTD, 4
 	rjmp loop
-   
-
-loop:
-	in r16, PIND
-	andi r16, 0b0010000
-	breq song
-	cbi PORTB, 5
-	rjmp loop
            
         
 song:
-	sbi PORTB, 5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
-	call C5
+	call D5
+	call D5
 	call REST
+	call D5
+	call D5
 	call REST
+	call D5
+	call D5
 	call REST
+	call D5
+	call D5
 	call REST
+	call E5
+	call E5
 	call REST
+	call E5
+	call E5
 	call REST
+	call E5
+	call E5
 	call REST
+	call E5
+	call E5
 	call REST
+	call FS5
+	call FS5
 	call REST
+	call FS5
+	call FS5
 	call REST
+	call E5
+	call E5
 	call REST
+	call E5
+	call E5
 	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
-	call REST
+	call D5
+	call D5
 	call REST
     call D5
     call D5
@@ -957,7 +923,6 @@ song:
     call REST
     call REST
     call REST
-    rjmp loop
 
 forever: rjmp forever
 
